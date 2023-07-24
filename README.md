@@ -51,12 +51,12 @@ python visualize.py voc ./images/ ./xml/ --out ./out/ --thickness 1
 
 
 ### Screenshot
-![1](./sample/PIE The number of annotations in each category.png)
+![1](./sample/1.png)
 
-![2](./sample/Width to height ratio bar chart of the annotations.png)
+![2](./sample/2.png)
 
-![3](./sample/The number of annotations in each category.png)
+![3](./sample/3.png)
 
-![4](./sample/Scatter of annotations' W & H.png)
+![4](./sample/4.png)
 
 
