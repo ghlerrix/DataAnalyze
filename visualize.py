@@ -6,6 +6,7 @@ import shutil
 from tqdm import tqdm
 
 
+
 def parse_args():
     parser = argparse.ArgumentParser(description='dataset visualize')
     parser.add_argument(
@@ -18,12 +19,8 @@ def parse_args():
                         'it is the json file path')
     parser.add_argument('--out', type=str,
                         default='visualizeOut', help='Result output directory')
-    parser.add_argument('--color', type=list, default=(0, 255, 0),
-                        help="bbox color")
     parser.add_argument('--thickness', type=int, default=1,
                         help="bbox thickness")
-    parser.add_argument('--textColor', type=list, default=(0, 255, 0),
-                        help="label color")
     parser.add_argument('--textThickness', type=int, default=1,
                         help="label thickness")
     return parser.parse_args()
@@ -47,8 +44,8 @@ def main():
             bboxs.append(bbox)
 
         draw.drawBboxs(os.path.join(args.imgsPath, imgName), bboxs, args.out,
-                       args.color, args.thickness,
-                       args.textColor, args.textThickness)
+                       (0, 255, 255), args.thickness,
+                       (0, 255, 255), args.textThickness)
 
 
 if __name__ == '__main__':

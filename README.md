@@ -41,11 +41,11 @@ If `type` is 'voc', the `path` is the path of the xml file directory.
 
 ##### Example
 ```bash
-python visualize.py coco images/ ./tarin.json --out ./out/ --thickness 1
+python visualize.py coco images/ ./tarin.json --out ./out/ --thickness 1 --textThickness 1
 ```
 
 ```bash
-python visualize.py voc ./images/ ./xml/ --out ./out/ --thickness 1
+python visualize.py voc ./images/ ./xml/ --out ./out/ --thickness 1 --textThickness 1
 ```
 
 
