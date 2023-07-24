@@ -5,3 +5,5 @@ neuVoc/
 utils/__pycache__/
 __pycache__/
 visualizeOut/
+.vscode
+draft/
