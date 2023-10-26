@@ -69,7 +69,7 @@ class Converter:
                         int(bnd_box.find('ymax').text)
                     ]
                     bbox = [
-                        bbox[0], bbox[1], bbox[0] + bbox[2], bbox[1] + bbox[3]
+                        bbox[0], bbox[1], bbox[2] - bbox[0], bbox[3] - bbox[1]
                     ]
 
                     ann_info = {
